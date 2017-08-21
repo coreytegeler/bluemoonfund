@@ -1,0 +1,119 @@
+$blue: #457aff;
+html, body {
+	font-family: 'Circular Pro';
+	font-weight: 300;
+	margin: 0;
+	.home {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+	}
+	.moonset {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		overflow-y: auto;
+		z-index: 400;
+		main {
+			margin-bottom: 100vh;
+		}
+		.text, .logos {
+			width: calc(100% - 120px);
+			padding: 60px;			
+			display: table;
+			.inner {
+				width: 65%;
+			}
+		}
+		.text {
+			h2 {
+				font-size: 40px;
+				margin: 0;
+				padding: 0 1em 0 0;
+				float: left;
+			}
+			p {
+		    font-size: 27px;
+		    line-height: 33px;
+		    font-weight: normal;
+			}
+			a {
+				border-bottom: 2px solid;
+				text-decoration: none;
+			}
+		}
+		.logos {
+			.logo {
+				width: 10vw;
+				height: 10vw;
+				float: left;
+				// background: white;
+				margin: 0 1em 1em 0;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 90%;
+			}
+		}
+	}
+	img {
+		width: 100%;
+	}
+	// .space {
+	// 	width: 100%;
+	// 	height: 100vh;
+	// }
+	&.mask {
+		background: white;
+		.home {
+			position: relative;
+			.image {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-size: cover;
+				background-position: top left;
+				&:hover {
+					cursor: pointer;
+				}
+				&.front {
+					z-index: 200;
+					background-image: url(imgs/home2.png);
+				}
+				&.back {
+					z-index: 100;
+					background-image: url(imgs/home1.png);
+				}
+			}
+			.blue {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: white;
+				opacity: .5;
+				z-index: 300;
+			}
+		}
+		.moonset {
+			.text, .logos {
+				color: white;
+			}
+			.text {
+				background: $blue;
+				a {
+					border-bottom-color: white;
+					color: white;
+				}
+			}
+			.logos {
+				// background: $blue;
+				background: white;
+			}
+		}
+	}
+}

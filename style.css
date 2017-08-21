@@ -1,0 +1,86 @@
+html, body {
+  font-family: 'Circular Pro';
+  font-weight: 300;
+  margin: 0; }
+  html .home, body .home {
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+  html .moonset, body .moonset {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    z-index: 400; }
+    html .moonset main, body .moonset main {
+      margin-bottom: 100vh; }
+    html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
+      width: calc(100% - 120px);
+      padding: 60px;
+      display: table; }
+      html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
+        width: 65%; }
+    html .moonset .text h2, body .moonset .text h2 {
+      font-size: 40px;
+      margin: 0;
+      padding: 0 1em 0 0;
+      float: left; }
+    html .moonset .text p, body .moonset .text p {
+      font-size: 27px;
+      line-height: 33px;
+      font-weight: normal; }
+    html .moonset .text a, body .moonset .text a {
+      border-bottom: 2px solid;
+      text-decoration: none; }
+    html .moonset .logos .logo, body .moonset .logos .logo {
+      width: 10vw;
+      height: 10vw;
+      float: left;
+      margin: 0 1em 1em 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 90%; }
+  html img, body img {
+    width: 100%; }
+  html.mask, body.mask {
+    background: white; }
+    html.mask .home, body.mask .home {
+      position: relative; }
+      html.mask .home .image, body.mask .home .image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        background-position: top left; }
+        html.mask .home .image:hover, body.mask .home .image:hover {
+          cursor: pointer; }
+        html.mask .home .image.front, body.mask .home .image.front {
+          z-index: 200;
+          background-image: url(imgs/home2.png); }
+        html.mask .home .image.back, body.mask .home .image.back {
+          z-index: 100;
+          background-image: url(imgs/home1.png); }
+      html.mask .home .blue, body.mask .home .blue {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        opacity: .5;
+        z-index: 300; }
+    html.mask .moonset .text, html.mask .moonset .logos, body.mask .moonset .text, body.mask .moonset .logos {
+      color: white; }
+    html.mask .moonset .text, body.mask .moonset .text {
+      background: #457aff; }
+      html.mask .moonset .text a, body.mask .moonset .text a {
+        border-bottom-color: white;
+        color: white; }
+    html.mask .moonset .logos, body.mask .moonset .logos {
+      background: white; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+{
+  "name": "bluemoonfund",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coreytegeler/coreytegeler.github.io.git"
+  },
+  "author": "Corey Tegeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreytegeler/coreytegeler.github.io/issues"
+  },
+  "homepage": "https://github.com/coreytegeler/coreytegeler.github.io#readme",
+  "scripts": {
+    "sass": "sass --watch style.scss:prestyle.css",
+    "prefix": "postcss -w -u autoprefixer prestyle.css -o style.css",
+    "coffee": "coffee -o ./ -cw ./script.coffee",
+    "pug": "pug --watch ./*.pug --out ./",
+    "watch": "npm run sass & npm run prefix & npm run pug & npm run coffee",
+    "go": "npm run watch & node_server"
+  },
+  "dependencies": {
+    "coffee-script": "1.10.0",
+    "node-sass": "3.8.0",
+    "autoprefixer": "^6.5.1",
+    "cssnano": "^3.8.0"
+  }
+}

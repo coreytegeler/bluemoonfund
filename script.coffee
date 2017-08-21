@@ -14,6 +14,6 @@ jQuery(document).ready ($) ->
 		$('.blue').css
 			opacity: blueOpacity
 
-		frontOpacity = 1 - progress
-		$('.front').css
-			opacity: frontOpacity
+		# frontOpacity = 1 - progress
+		# $('.front').css
+		# 	opacity: frontOpacity

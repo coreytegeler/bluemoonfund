@@ -3,10 +3,13 @@ html
 	script(type='text/javascript' src='./jquery.js') 
 	script(type='text/javascript' src='./script.js') 
 	body.mask
+		.logo
+			.icon
+			.text
 		.home
 			.blue
 			.front.image
-			.back.image
+			//- .back.image
 		.moonset
 			main
 				.text
@@ -25,7 +28,7 @@ html
 					.inner
 						-images = ['aaf.png','cgcf.png','fla.png','gei.png','jtf.png','mm.jpg','scef.png','wcs.png']
 						-for(var i = 0; i < images.length; i++) {
-							.logo(style='background-image:url(imgs/'+images[i]+')')
+							.image(style='background-image:url(imgs/'+images[i]+')')
 						-}
 				.space
 				//- img(src='imgs/dot.svg')

@@ -7,19 +7,15 @@
     $moonset = $('.moonset');
     $main = $moonset.find('main');
     return $moonset.on('scroll', function(e) {
-      var blueOpacity, frontOpacity, height, progress, scroll, scrollHeight;
+      var blueOpacity, height, progress, scroll, scrollHeight;
       height = $moonset.innerHeight();
       scroll = $moonset.scrollTop();
       scrollHeight = $moonset[0].scrollHeight;
       progress = scroll * 1 / (scrollHeight - height);
       blueOpacity = .5 - progress;
       console.log(blueOpacity);
-      $('.blue').css({
+      return $('.blue').css({
         opacity: blueOpacity
-      });
-      frontOpacity = 1 - progress;
-      return $('.front').css({
-        opacity: frontOpacity
       });
     });
   });

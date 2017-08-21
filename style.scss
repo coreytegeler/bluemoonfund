@@ -22,6 +22,34 @@ $blue: #457aff;
 html, body {
 	font-family: 'Circular Pro';
 	margin: 0;
+	.logo {
+		width: 50px;
+		position: fixed;
+		right: 35px;
+		top: 30px;
+		z-index: 500;
+		.icon {
+			width: 50px;
+			height: 50px;
+			background: {
+				image: url(imgs/logo_icon.png);
+				position: center;
+				repeat: no-repeat;
+				size: 50px;
+			}
+		}
+		.text {
+			width: 50px;
+			height: 38px;
+			margin-top: 5px;
+			background: {
+				image: url(imgs/logo_text.png);
+				position: center;
+				repeat: no-repeat;
+				size: 50px;
+			}
+		}
+	}
 	.home {
 		width: 100%;
 		height: 100vh;
@@ -66,7 +94,7 @@ html, body {
 			}
 		}
 		.logos {
-			.logo {
+			.image {
 				width: 10vw;
 				height: 10vw;
 				float: left;
@@ -102,12 +130,12 @@ html, body {
 				}
 				&.front {
 					z-index: 200;
-					background-image: url(imgs/home2.png);
+					background-image: url(imgs/home.png);
 				}
-				&.back {
-					z-index: 100;
-					background-image: url(imgs/home1.png);
-				}
+				// &.back {
+				// 	z-index: 100;
+				// 	background-image: url(imgs/home1.png);
+				// }
 			}
 			.blue {
 				width: 100%;

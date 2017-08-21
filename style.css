@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Circular Pro';
+  src: url("fonts/CircularPro-Bold.eot");
+  src: url("fonts/CircularPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/CircularPro-Bold.woff") format("woff"), url("fonts/CircularPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Circular Book';
+  src: url("fonts/CircularStd-Book.eot");
+  src: url("fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("fonts/CircularStd-Book.woff") format("woff"), url("fonts/CircularStd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 html, body {
   font-family: 'Circular Pro';
-  font-weight: 300;
   margin: 0; }
   html .home, body .home {
     width: 100%;
@@ -23,6 +34,7 @@ html, body {
       html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
         width: 65%; }
     html .moonset .text h2, body .moonset .text h2 {
+      font-weight: normal;
       font-size: 40px;
       margin: 0;
       padding: 0 1em 0 0;

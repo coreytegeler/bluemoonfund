@@ -12,7 +12,9 @@
   font-style: normal; }
 html, body {
   font-family: 'Circular Pro';
-  margin: 0; }
+  margin: 0;
+  background-color: #457aff;
+  color: white; }
   html .logo, body .logo {
     width: 50px;
     position: fixed;
@@ -34,10 +36,6 @@ html, body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50px; }
-  html .home, body .home {
-    width: 100%;
-    height: 100vh;
-    position: relative; }
   html .moonset, body .moonset {
     width: 100%;
     height: 100%;
@@ -45,73 +43,65 @@ html, body {
     left: 0;
     top: 0;
     overflow-y: auto;
-    z-index: 400; }
-    html .moonset main, body .moonset main {
-      margin-bottom: 100vh; }
+    z-index: 400;
+    background-image: url(imgs/moonset.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
     html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
       width: calc(100% - 120px);
-      padding: 60px;
       display: table; }
       html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
-        width: 65%; }
-    html .moonset .text h2, body .moonset .text h2 {
-      font-weight: normal;
-      font-size: 50px;
-      line-height: 62px;
-      margin: 0;
-      padding: 0 1em 0 0;
-      float: left; }
-    html .moonset .text p, body .moonset .text p {
-      font-size: 27px;
-      line-height: 33px;
-      font-weight: normal; }
-    html .moonset .text a, body .moonset .text a {
-      border-bottom: 2px solid;
-      text-decoration: none; }
-    html .moonset .logos .image, body .moonset .logos .image {
-      width: 10vw;
-      height: 10vw;
-      float: left;
-      margin: 0 1em 1em 0;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 90%; }
+        width: 55%; }
+    html .moonset .text, body .moonset .text {
+      margin: 140px 60px 60px 60px; }
+      html .moonset .text h2, body .moonset .text h2 {
+        width: 100%;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 62px;
+        margin: 0 0 30px 0; }
+      html .moonset .text p, body .moonset .text p {
+        font-size: 27px;
+        line-height: 33px;
+        font-weight: normal;
+        margin: 0 0 5px 0;
+        text-indent: 50px; }
+        html .moonset .text p:first-of-type, body .moonset .text p:first-of-type {
+          text-indent: 0; }
+      html .moonset .text a, body .moonset .text a {
+        color: white;
+        border-bottom: 2px solid;
+        text-decoration: none; }
+    html .moonset .logos, body .moonset .logos {
+      padding: 60px;
+      background-color: white; }
+      html .moonset .logos .image, body .moonset .logos .image {
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin: 0 1em 1em 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%; }
   html img, body img {
     width: 100%; }
-  html.mask, body.mask {
-    background: white; }
-    html.mask .home, body.mask .home {
-      position: relative; }
-      html.mask .home .image, body.mask .home .image {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-size: cover;
-        background-position: top left; }
-        html.mask .home .image:hover, body.mask .home .image:hover {
-          cursor: pointer; }
-        html.mask .home .image.front, body.mask .home .image.front {
-          z-index: 200;
-          background-image: url(imgs/home.png); }
-      html.mask .home .blue, body.mask .home .blue {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: white;
-        opacity: .5;
-        z-index: 300; }
-    html.mask .moonset .text, html.mask .moonset .logos, body.mask .moonset .text, body.mask .moonset .logos {
-      color: white; }
-    html.mask .moonset .text, body.mask .moonset .text {
-      background: #457aff; }
-      html.mask .moonset .text a, body.mask .moonset .text a {
-        border-bottom-color: white;
-        color: white; }
-    html.mask .moonset .logos, body.mask .moonset .logos {
-      background: white; }
+  @media screen and (max-width: 900px) {
+    html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
+      width: 100%; }
+      html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
+        width: 90%;
+        margin: auto; }
+    html .moonset .text, body .moonset .text {
+      margin: 150px auto 60px auto; }
+    html .moonset .logos, body .moonset .logos {
+      padding: 60px 0; }
+    html .moonset .text .inner h2, body .moonset .text .inner h2 {
+      font-size: 35px;
+      width: 80%;
+      line-height: 45px; }
+    html .moonset .text .inner p, body .moonset .text .inner p {
+      font-size: 21px;
+      line-height: 27px; } }
 
 /*# sourceMappingURL=prestyle.css.map */

@@ -11,7 +11,6 @@
   font-weight: normal;
   font-style: normal; }
 html, body {
-  font-family: 'Circular Pro';
   margin: 0;
   background-color: #457aff;
   color: white; }
@@ -50,6 +49,7 @@ html, body {
     background-repeat: no-repeat; }
     html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
       width: calc(100% - 120px);
+      max-width: 68em;
       display: table; }
       html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
         width: 55%; }
@@ -60,15 +60,16 @@ html, body {
         font-weight: normal;
         font-size: 50px;
         line-height: 62px;
-        margin: 0 0 30px 0; }
+        margin: 0 0 30px 0;
+        font-family: 'Circular Pro'; }
       html .moonset .text p, body .moonset .text p {
-        font-size: 27px;
-        line-height: 33px;
+        font-size: 25px;
+        line-height: 31px;
         font-weight: normal;
-        margin: 0 0 5px 0;
-        text-indent: 50px; }
-        html .moonset .text p:first-of-type, body .moonset .text p:first-of-type {
-          text-indent: 0; }
+        margin: 0 0 1em 0;
+        font-family: 'Circular Book'; }
+        html .moonset .text p:last-of-type, body .moonset .text p:last-of-type {
+          margin: 0; }
       html .moonset .text a, body .moonset .text a {
         color: white;
         border-bottom: 2px solid;
@@ -86,7 +87,7 @@ html, body {
         background-size: 90%; }
   html img, body img {
     width: 100%; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 47.5em) {
     html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
       width: 100%; }
       html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
@@ -98,10 +99,15 @@ html, body {
       padding: 60px 0; }
     html .moonset .text .inner h2, body .moonset .text .inner h2 {
       font-size: 35px;
-      width: 80%;
+      width: 100%;
       line-height: 45px; }
     html .moonset .text .inner p, body .moonset .text .inner p {
-      font-size: 21px;
-      line-height: 27px; } }
+      width: 100%;
+      font-size: 14px;
+      line-height: 18px; } }
+  @media screen and (max-width: 75em) {
+    html .moonset .text p, body .moonset .text p {
+      font-size: 20px;
+      line-height: 25px; } }
 
 /*# sourceMappingURL=prestyle.css.map */

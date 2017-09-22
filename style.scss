@@ -20,7 +20,6 @@ $blue: #457aff;
 }
 
 html, body {
-	font-family: 'Circular Pro';
 	margin: 0;
 	background-color: $blue;
 	color: white;
@@ -68,6 +67,7 @@ html, body {
 		}
 		.text, .logos {
 			width: calc(100% - 120px);
+	    max-width: 68em;
 			display: table;
 			.inner {
 				width: 55%;
@@ -81,15 +81,18 @@ html, body {
 		    font-size: 50px;
 		    line-height: 62px;
 				margin: 0 0 30px 0;
+				font-family: 'Circular Pro';
 			}
 			p {
-		    font-size: 27px;
-		    line-height: 33px;
+		    // font-size: 27px;
+		    // line-height: 33px;
+		    font-size: 25px;
+		    line-height: 31px;
 		    font-weight: normal;
-		    margin: 0 0 5px 0;
-		    text-indent: 50px;
-		    &:first-of-type {
-		    	text-indent: 0;
+		    margin: 0 0 1em 0;
+		    font-family: 'Circular Book';
+		    &:last-of-type {
+		    	margin: 0;
 		    }
 			}
 			a {
@@ -172,7 +175,7 @@ html, body {
 	// 		}
 	// 	}
 	// }
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 47.5em) {
 		.moonset {
 			.text, .logos {
 				width: 100%;
@@ -190,19 +193,21 @@ html, body {
 			.text .inner {
 				h2 {
 			    font-size: 35px;
-			    width: 80%;
+			    width: 100%;
 			    line-height: 45px;
 			  }
 			  p {
-			  	font-size: 21px;
-			    line-height: 27px;
+			  	width: 100%;
+			  	font-size: 14px;
+			    line-height: 18px;
 			  }
 		  }
 		}
 	}
-	@media screen and (max-width: 47.5em) {
-		.moonset {
-			
+	@media screen and (max-width: 75em) {
+		.moonset .text p {
+			font-size: 20px;
+	    line-height: 25px;
 		}
 	}
 }

@@ -12,19 +12,23 @@ html
 					.inner
 						h2 Our moon has set.
 						p
-							| When blue moon fund decided to pursue a sunset strategy we set out to break new ground, demonstrating how to invest with integrity and build vibrancy and resilience in world communities and ecosystems.  We pursued that through  three goals: a) magnifying our ability to address this generation’s pressing social, environmental and equitable challenges with business profits made by the previous generations; b) encouraging our implementing partners to diversify, leverage and – when possible – make self-sustaining their organizations and the solutions they advance, and; c) modelling an approach that breaks down the barriers between investing and grantmaking while freeing practitioners – whether family, board or staff – from the conflict of interest between impact and perpetuity.
+							| When blue moon fund decided to pursue a sunset strategy we set out to break new ground, demonstrating how to invest with integrity and build vibrancy and resilience in world communities and ecosystems. We pursued that through three goals:
+						p a. magnifying our ability to address this generation’s pressing social, environmental and equitable challenges with business profits made by the previous generations;
+						p b. encouraging our implementing partners to diversify, leverage and&mdash;when possible&mdash;make self-sustaining their organizations and the solutions they advance, and;
+						p c. modelling an approach that breaks down the barriers between investing and grantmaking while freeing practitioners&mdash;whether family, board or staff&mdash;from the conflict of interest between impact and perpetuity.
 						p
-							| Nothing has made this journey more rewarding than the people and communities we have been able to work with, and whenever possible support.  Thank you for your inspiration, leadership, and partnership in advancing positive social change for people, communities, the environment and our world! 
+							| Nothing has made this journey more rewarding than the people and communities we have been able to work with, and whenever possible support. Thank you for your inspiration, leadership, and partnership in advancing positive social change for people, communities, the environment and our world! 
 						p
-							| We are proud to announce that we have completed that sunset strategy and are no longer a grantmaking organization.  Our program priorities will be taken forward by leveraged multi-donor/investor collaborations – to learn more please explore the links below. Active grantees may file outstanding reports on our 
+							| We are proud to announce that we have completed that sunset strategy and are no longer a grantmaking organization.  Our program priorities will be taken forward by leveraged multi-donor/investor collaborations&mdash;to learn more please explore the links below. Active grantees may file outstanding reports on our 
 							a(href='https://www.grantrequest.com/SID_623/Default.asp?SA=&FID=&SESID=50180&RL=' target='_blank')='grants management portal'
 							| .
 
 				.logos
 					.inner
 						-images = ['aaf.png','cgcf.png','fla.png','gei.png','jtf.png','mm.jpg','scef.png','wcs.png']
-						-for(var i = 0; i < images.length; i++) {
-							.image(style='background-image:url(imgs/'+images[i]+')')
-						-}
-				//- .space
-				//- img(src='imgs/dot.svg')
+						-links = ['https://www.andesamazonfund.org','http://www.thjj.org/en/','http://www.foundationforlouisiana.org','http://www.geichina.org/index.php?controller=Default&action=Index','http://www.justtransitionfund.org','http://www.mosaicomanagement.com','http://www.scefund.org/EN/Home/','https://www.wcs.org']
+
+
+						-for(var i = 0; i < images.length; i++)
+							a(href=links[i] target='_blank')
+								.image(style='background-image:url(imgs/'+images[i]+')')

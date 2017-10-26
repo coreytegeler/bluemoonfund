@@ -12,7 +12,7 @@
   font-style: normal; }
 html, body {
   margin: 0;
-  background-color: #457aff;
+  background-color: white;
   color: white; }
   html .logo, body .logo {
     width: 50px;
@@ -49,8 +49,9 @@ html, body {
     background-repeat: no-repeat; }
     html .moonset .text, html .moonset .logos, body .moonset .text, body .moonset .logos {
       width: calc(100% - 120px);
-      max-width: 68em;
       display: table; }
+      html .moonset .text .max, html .moonset .logos .max, body .moonset .text .max, body .moonset .logos .max {
+        max-width: 68em; }
       html .moonset .text .inner, html .moonset .logos .inner, body .moonset .text .inner, body .moonset .logos .inner {
         width: 55%; }
     html .moonset .text, body .moonset .text {

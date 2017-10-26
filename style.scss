@@ -21,7 +21,7 @@ $blue: #457aff;
 
 html, body {
 	margin: 0;
-	background-color: $blue;
+	background-color: white;
 	color: white;
 	.logo {
 		width: 50px;
@@ -67,8 +67,10 @@ html, body {
 		}
 		.text, .logos {
 			width: calc(100% - 120px);
-	    max-width: 68em;
 			display: table;
+			.max {
+				max-width: 68em;
+			}
 			.inner {
 				width: 55%;
 			}

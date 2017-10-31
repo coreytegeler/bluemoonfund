@@ -106,6 +106,9 @@ html, body {
 		.logos {
 			padding: 60px;
 			background-color: white;
+			&.transparent {
+				background-color: transparent;
+			}
 			.image {
 				width: 120px;
 				height: 120px;

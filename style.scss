@@ -105,10 +105,7 @@ html, body {
 		}
 		.logos {
 			padding: 60px;
-			background-color: white;
-			&.transparent {
-				background-color: transparent;
-			}
+			background-color: transparent;
 			.image {
 				width: 120px;
 				height: 120px;
@@ -117,7 +114,7 @@ html, body {
 				margin: 0 1em 1em 0;
 				background-position: center;
 				background-repeat: no-repeat;
-				background-size: 90%;
+				background-size: contain;
 			}
 		}
 	}
